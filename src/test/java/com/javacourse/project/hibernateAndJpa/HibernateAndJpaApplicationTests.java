@@ -1,4 +1,4 @@
-package com.javacourse.proect.hibernateAndJpa;
+package com.javacourse.project.hibernateAndJpa;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

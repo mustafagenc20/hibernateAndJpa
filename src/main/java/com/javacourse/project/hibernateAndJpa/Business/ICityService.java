@@ -1,8 +1,8 @@
-package com.javacourse.proect.hibernateAndJpa.Business;
+package com.javacourse.project.hibernateAndJpa.Business;
 
 import java.util.List;
 
-import com.javacourse.proect.hibernateAndJpa.Entities.City;
+import com.javacourse.project.hibernateAndJpa.Entities.City;
 
 public interface ICityService {
 	List<City> getAll();

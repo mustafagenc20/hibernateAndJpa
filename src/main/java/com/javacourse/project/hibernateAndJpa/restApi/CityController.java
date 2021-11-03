@@ -1,7 +1,9 @@
-package com.javacourse.proect.hibernateAndJpa.restApi;
+package com.javacourse.project.hibernateAndJpa.restApi;
 
 import java.util.List;
 
+import com.javacourse.project.hibernateAndJpa.Business.ICityService;
+import com.javacourse.project.hibernateAndJpa.Entities.City;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.javacourse.proect.hibernateAndJpa.Business.ICityService;
 import com.javacourse.proect.hibernateAndJpa.Entities.*;
 
 @RestController

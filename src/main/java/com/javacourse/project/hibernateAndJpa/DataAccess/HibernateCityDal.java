@@ -1,12 +1,12 @@
-package com.javacourse.proect.hibernateAndJpa.DataAccess;
+package com.javacourse.project.hibernateAndJpa.DataAccess;
 import java.util.List;
 import javax.persistence.EntityManager;
+
+import com.javacourse.project.hibernateAndJpa.Entities.City;
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.javacourse.proect.hibernateAndJpa.Entities.City;
 
 @Repository
 public class HibernateCityDal implements ICityDal {
@@ -20,7 +20,7 @@ public class HibernateCityDal implements ICityDal {
 	//AOP - Aspect Oriented Programming
 	@Override
 	@Transactional
-	public List<City> getAll() {		
+	public List<City> getAll() {
 		Session session = entityManager.unwrap(Session.class);
 		List<City> cities = session.createQuery("from City",City.class).getResultList();
 		return cities;

@@ -1,7 +1,8 @@
-package com.javacourse.proect.hibernateAndJpa.DataAccess;
+package com.javacourse.project.hibernateAndJpa.DataAccess;
 import java.util.List;
 
-import com.javacourse.proect.hibernateAndJpa.Entities.City;;
+import com.javacourse.project.hibernateAndJpa.Entities.City;
+;
 
 public interface ICityDal {
 	List<City> getAll();

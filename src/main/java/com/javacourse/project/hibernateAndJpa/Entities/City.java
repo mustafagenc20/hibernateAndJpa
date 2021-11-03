@@ -1,4 +1,4 @@
-package com.javacourse.proect.hibernateAndJpa.Entities;
+package com.javacourse.project.hibernateAndJpa.Entities;
 
 import javax.persistence.*;
 
